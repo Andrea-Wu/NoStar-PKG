@@ -1,5 +1,6 @@
-var myVar = setInterval(colorChange, 1000);
-
+var myVar = setInterval(colorChange, 10);
+var size = 100;
+var grow = 1; //1 means that square gets bigger
 function colorChange(){
 	var n = Math.random() * 10;
 	//document.getElementById("square").innerHTML = n;
@@ -21,5 +22,20 @@ function colorChange(){
 		document.getElementById("square").style.backgroundColor = "#00FFFF";
 	}else{
 		document.getElementById("square").style.backgroundColor = "white";
+		
+		if(size > 400){
+			grow = 0;
+		}else if(size< 100){
+			grow = 1;
+		}
+		if(grow == 1){
+			size = size+10;
+		}else{
+			size = size-10;
+		}
+		var sizeString = size.toString();
+		var sizeStringPx = sizeString.concat("px");
+		document.getElementById("square").style.height = sizeStringPx;
+		document.getElementById("square").style.width = sizeStringPx;
 	}
 }
