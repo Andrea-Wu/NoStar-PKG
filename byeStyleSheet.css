@@ -4,7 +4,10 @@ h1 {
 
 
 #square {
-width: 100px;
-height: 100px;
-background-color: #007fff; 
+	width: 100px;
+	height: 100px;
+	background-color: #007fff; 
+	margin-left: auto;
+  	margin-right: auto;
+
 } 
