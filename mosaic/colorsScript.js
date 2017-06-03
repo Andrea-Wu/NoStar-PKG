@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	for(var i = 0; i < 500; i++){
+	for(var i = 0; i < 608; i++){
 		$("#sq").clone().appendTo("body");
 		console.log("hi");
 	}
