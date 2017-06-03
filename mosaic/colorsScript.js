@@ -1,3 +1,11 @@
+$(document).ready(function(){
+	for(var i = 0; i < 500; i++){
+		$("#sq").clone().appendTo("body");
+		console.log("hi");
+	}
+	$("#sq").hide();
+});
+
 setInterval(function () {
 
 
@@ -27,10 +35,4 @@ setInterval(function () {
 	var myArray = Array.prototype.slice.call(myList);
     myArray.forEach(colorChange);
 
-
-
-
-
-
-
-}, 1000);
+}, 100);
