@@ -1,3 +1,3 @@
 # NoStar-PKG
 https://andrea-wu.github.io/NoStar-PKG/
-parody website
+I repurposed a useless parody website into a website for useless javascript/html/css mini-projects
